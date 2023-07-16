@@ -1,0 +1,95 @@
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+}
+
+header {
+    background: #000000;
+    border-bottom: 1px solid #ffffff;
+    height: 50px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin-right: 25px;
+}
+
+.search {
+    margin: 10px 0;
+   
+}
+.col-one{
+    width: 22%;
+}
+.col-two{
+    width: 74%;
+}
+.cWeather{
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    padding:0 10px;
+}
+
+.cards {
+    /* grid-row: 2;
+    grid-column: 1;
+    padding: 20px; */
+    display: flex;
+    padding: 10px;
+}
+
+
+
+.card {
+    /* background: #000000; */
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    margin-right: 10px;
+    padding: 20px;
+    width: 20%;
+}
+
+/* 
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 10px;
+} */
+
+
+button {
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000000;
+}
