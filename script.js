@@ -49,39 +49,39 @@ function runForecast(city) {
 }
 
 
-// button.addEventListener('click', captureUserInput)
+button.addEventListener('click', captureUserInput)
 
 
-// function populateFiveDay(data) {
+function populateFiveDay(data) {
 
-//     console.log("Humidity:", data.list[1].main.humidity)
+    console.log("Humidity:", data.list[1].main.humidity)
 
-//     for (let i = 1; i < 6; i++) {
-//         // Create card elements
-//         var cardEl = document.createElement("div");
-//         var dateEl = document.createElement("p");
-//         var tempEl = document.createElement("p");
-//         var humEl = document.createElement("p");
-//         var imageEl = document.createElement("img")
-//         // Give elements content
-//         let multiply = data.list[i].dt * 1000
-//         let dateA = new Date(multiply)
-//         let dateConvert = dateA.toLocaleString().split(',')[0];
-//         dateEl.textContent = dateConvert;
-//         tempEl.textContent = "Temp: " + data.list[i].main.temp + "F"
-//         humEl.textContent = "Humidity: " + data.list[i].main.humidity + "%"
+    for (let i = 1; i < 6; i++) {
+        // Create card elements
+        var cardEl = document.createElement("div");
+        var dateEl = document.createElement("p");
+        var tempEl = document.createElement("p");
+        var humEl = document.createElement("p");
+        var imageEl = document.createElement("img")
+        // Give elements content
+        let multiply = data.list[i].dt * 1000
+        let dateA = new Date(multiply)
+        let dateConvert = dateA.toLocaleString().split(',')[0];
+        dateEl.textContent = dateConvert;
+        tempEl.textContent = "Temp: " + data.list[i].main.temp + "F"
+        humEl.textContent = "Humidity: " + data.list[i].main.humidity + "%"
         
 
-//         // Add any attributes (optional)
-//         cardEl.setAttribute("class", "card")
-//         imageEl.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}.png`)
+        // Add any attributes (optional)
+        cardEl.setAttribute("class", "card")
+        imageEl.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}.png`)
 
 
-//         // Append elements to the page
-//         cardEl.append(dateEl, imageEl, tempEl, humEl)
-//         cards.append(cardEl)
+        // Append elements to the page
+        cardEl.append(dateEl, imageEl, tempEl, humEl)
+        cards.append(cardEl)
 
-//     }
+    }
 
 
 // }
