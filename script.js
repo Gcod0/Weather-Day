@@ -84,35 +84,35 @@ function populateFiveDay(data) {
     }
 
 
-// }
+}
 
-// button.addEventListener('click', captureUserInput)
+button.addEventListener('click', captureUserInput)
 
-// function populateCurrentWeather(data) {
-// console.log (data)
-// for (let i = 0; i < 1; i++) {
+function populateCurrentWeather(data) {
+console.log (data)
+for (let i = 0; i < 1; i++) {
 
-//     // var currentEl = document.getElementById("current-date");
-//     var dateEl = document.getElementById("current-date");
-//     var tempEl = document.getElementById("current-temp");
-//     var humEl = document.getElementById("current-hum");
-//     var imageEl = document.getElementById("current-img")
+    // var currentEl = document.getElementById("current-date");
+    var dateEl = document.getElementById("current-date");
+    var tempEl = document.getElementById("current-temp");
+    var humEl = document.getElementById("current-hum");
+    var imageEl = document.getElementById("current-img")
 
-//     let multiply = data.dt * 1000
-//     let dateA = new Date(multiply)
-//     let dateConvert = dateA.toLocaleString().split(',')[0];
-//     dateEl.textContent = `Date: ${dateConvert}`;
-//     tempEl.textContent = "Temp: " + data.main.temp + "F"
-//     humEl.textContent = "Humidity: " + data.main.humidity + "%"
+    let multiply = data.dt * 1000
+    let dateA = new Date(multiply)
+    let dateConvert = dateA.toLocaleString().split(',')[0];
+    dateEl.textContent = `Date: ${dateConvert}`;
+    tempEl.textContent = "Temp: " + data.main.temp + "F"
+    humEl.textContent = "Humidity: " + data.main.humidity + "%"
 
-//     // currentEl.setAttribute("class", "cWeather")
-//     imageEl.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
+    // currentEl.setAttribute("class", "cWeather")
+    imageEl.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
 
-//     //cWeather.append(currentEl)
-//     // currentEl.append(dateEl, imageEl, tempEl, humEl)
-//     // cWeather.append(currentEl)
+    //cWeather.append(currentEl)
+    // currentEl.append(dateEl, imageEl, tempEl, humEl)
+    // cWeather.append(currentEl)
 
-// }
+}
 
 
 // }
