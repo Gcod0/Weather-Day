@@ -22,18 +22,18 @@ function captureUserInput() {
 
 
 
-// function runCurrentWeather(city) {
+function runCurrentWeather(city) {
 
-//     // once the weather data is returned we will need to parse through the data and add the contents that are needed to the HTML
-//     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=ea306fd2bc8803aec16d1d339b6b87d6')
-//         .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function (data) {
-//             console.log(data);
-//             populateCurrentWeather(data)
-//         });
-// }
+    // once the weather data is returned we will need to parse through the data and add the contents that are needed to the HTML
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=ea306fd2bc8803aec16d1d339b6b87d6')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            populateCurrentWeather(data)
+        });
+}
 
 // function runForecast(city) {
 //     // the same goes for the forecast api
