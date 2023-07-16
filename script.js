@@ -174,9 +174,9 @@ console.log(localStorage)
 
 
 
-// // if those buttons are clicked it will need to run the api data all over again. 
-// function runHistory() {
-//     runCurrentWeather(city)
-//     runForecast(city)
-// }
+// if those buttons are clicked it will need to run the api data all over again. 
+function runHistory() {
+    runCurrentWeather(city)
+    runForecast(city)
+}
 
