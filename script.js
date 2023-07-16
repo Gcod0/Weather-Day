@@ -35,18 +35,18 @@ function runCurrentWeather(city) {
         });
 }
 
-// function runForecast(city) {
-//     // the same goes for the forecast api
-//     fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&appid=ea306fd2bc8803aec16d1d339b6b87d6')
-//         .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function (data) {
-//             console.log("fetch 2", data);
-//             populateFiveDay(data)
-//         });
+function runForecast(city) {
+    // the same goes for the forecast api
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&appid=ea306fd2bc8803aec16d1d339b6b87d6')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log("fetch 2", data);
+            populateFiveDay(data)
+        });
 
-// }
+}
 
 
 // button.addEventListener('click', captureUserInput)
