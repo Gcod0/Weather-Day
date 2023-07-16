@@ -115,35 +115,35 @@ for (let i = 0; i < 1; i++) {
 }
 
 
-// }
+}
 
 
 
-// // having trouble targeting the city name info from the api data <--- this is the issue
+// having trouble targeting the city name info from the api data <--- this is the issue
 
-// var saveSearchHis = function() {
-//     var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || []
-//     var city = userInput.value
-//     searchHistory.push(city)
-//     localStorage.setItem("searchHistory", JSON.stringify(searchHistory))
-// }
-// function renderSearchHistory() {
-//     document.querySelector(".search").innerHTML=""
-//     var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || []
-//     for (i=0;i<searchHistory.length-1;i++) {
-//         var cityButton = document.createElement("button")
-//         cityButton.textContent = searchHistory[i]
-//         document.querySelector(".search").append(cityButton)
+var saveSearchHis = function() {
+    var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || []
+    var city = userInput.value
+    searchHistory.push(city)
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory))
+}
+function renderSearchHistory() {
+    document.querySelector(".search").innerHTML=""
+    var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || []
+    for (i=0;i<searchHistory.length-1;i++) {
+        var cityButton = document.createElement("button")
+        cityButton.textContent = searchHistory[i]
+        document.querySelector(".search").append(cityButton)
 
-//     }
-// } 
+    }
+} 
 
-// // we need to save the city information in local storage and create buttons on the page as search history
-// // Second item in the array is changiing the search button name? <--- this is the issue
-// localStorage.setItem("city", "Search")
-// document.getElementById("citySearch").innerHTML = localStorage.getItem("city");
+// we need to save the city information in local storage and create buttons on the page as search history
+// Second item in the array is changiing the search button name? <--- this is the issue
+localStorage.setItem("city", "Search")
+document.getElementById("citySearch").innerHTML = localStorage.getItem("city");
 
-// console.log(localStorage)
+console.log(localStorage)
 
 
 
